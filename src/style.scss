@@ -1,0 +1,158 @@
+$red: #de3636;
+$grey: #9194989e;
+$softBlack: #3b3c42;
+$black: #202125;
+
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: $black !important;
+  min-height: 100vh;
+}
+
+.back-to-home{
+  cursor: pointer;
+  border: 1px solid $red;
+  p{
+    color: $red;
+    font-size: 18px;
+  }
+}
+
+.back-to-home:hover{
+  transition: 0.2s;
+  background-color: $red;
+  p{
+    color: #fff;
+  }
+}
+
+.navbar{
+  backdrop-filter: blur(3px);
+}
+
+#app{
+  height: 100vh;
+}
+
+.logo-style{
+  max-width: 110px;
+  height: auto;
+}
+
+.content-boddy{
+  padding-top: 76px;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.category-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.see-detail{
+  font-family: 'Fugaz One', cursive;
+  color: #de3636;
+  font-size: 14px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+.custom-search{
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.custom-search:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-search::placeholder {
+  color: #fff !important;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.divider {
+  display: inline-block;
+  width: 2px;
+  background-color: #e4e8ed;
+  margin: 0 10px;
+}
+
+.divider-grey {
+  display: inline-block;
+  width: 2px;
+  background-color: $grey;
+  margin: 0 10px;
+}
+
+.movie-info{
+  p{
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #919498;
+  }
+}
+
+.detail-descritpion{
+  p{
+    font-size: 16px;
+    font-family: 'Poppins-regular', sans-serif;
+  }
+}
+
+.detail-title{
+  h3{
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.pagination{
+  .page-item.disabled .page-link {
+    color: $red;
+    background-color: $softBlack;
+    border-color: $softBlack;
+  }
+  .page-item .page-link {
+    background-color: $softBlack;
+    border-color: $softBlack;
+  }
+  .page-item{
+    button[role=menuitem]{
+      color: $red;
+    }
+    margin-right: 4px;
+    margin-left: 4px;
+    .page-link{
+      border-radius: 0;
+      background-color: $softBlack;
+      border-color: $softBlack;
+      color: #fff;
+    }
+  }
+  .page-item.active .page-link{
+    background-color: $red;
+    border-color: $red;
+  }
+}
+
+@media (min-width: 992px) {
+  .see-detail{
+    font-size: 20px;
+  }
+}
